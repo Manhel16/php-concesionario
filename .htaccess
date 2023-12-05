@@ -1,0 +1,6 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+# RewriteRule para mostrarProductoAdministrador.php
+# Esta regla reescribirá la URL "vehiculo/ID" a "mostrarProductoAdministrador.php?id=ID"
+RewriteRule ^vehiculo/([0-9]+)$ mostrarProductoAdministrador.php?id=$1 [NC,L]
